@@ -92,6 +92,16 @@ small, li {
     text-align: center;
 }
 
+.gif img {
+    width: 100%;      /* Make the image width scale to its container */
+    height: auto;     /* Maintain the image's aspect ratio */
+    max-width: 550px; /* Optional: limit the maximum width of the image */
+}
+
+.map iframe {
+    width: 100%;   /* Make the map take the full width of its container */
+}
+
 /* Badge */
 .badge {
     background-color: #584966;
