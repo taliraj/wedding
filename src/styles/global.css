@@ -1,3 +1,7 @@
+@font-face {
+    font-family: AbadiMtStd;
+    src:url("/abadi-mt-std.ttf");
+}
 /* Global styles */
 :root {
     --background: #1e1e2e; 
@@ -8,7 +12,7 @@
     --text-link: #78c2ad;
     --underline: #375a7f;
     --header: 'Pacifico', cursive;
-    --body: 'Josefin Sans', sans-serif; 
+    --body: 'AbadiMtStd', sans-serif;
 }
 
 html {
