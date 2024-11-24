@@ -60,7 +60,7 @@ small, li {
 /* Navigation Bar */
 .navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
     margin-top: 0.8rem;
 }
 
