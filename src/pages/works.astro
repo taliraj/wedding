@@ -6,10 +6,45 @@ const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 ---
 <Layout pageTitle={pageTitle}>
-    <div class="gif">
-        <img width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp"/>
+
+    <h2>Maps</h2>
+    <p>Aenean a ex et metus finibus malesuada commodo in magna. 
+    In ut libero urna. Aenean in quam in ipsum rutrum egestas. 
+    Donec semper dignissim ante. Sed efficitur mi et sapien ultrices malesuada. 
+    Aliquam fermentum aliquam ante, eu semper mi vestibulum quis. 
+    Sed et purus metus. Pellentesque vestibulum commodo euismod. 
+    Duis a mauris accumsan lorem laoreet tempor. Mauris accumsan varius metus, 
+    in rutrum magna accumsan eget. Pellentesque at leo at sem tempor hendrerit 
+    non sit amet ante. Cras commodo augue sed magna rutrum rutrum.</p>
+
+    <div class="map">
+      <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.9396230057923!2d19.711337726555712!3d41.41882929404352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13502d0712c5607f%3A0x5254c1f62d5286db!2sTirana%20International%20Airport!5e0!3m2!1sen!2suk!4v1731354053232!5m2!1sen!2suk" 
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
-    <h2>Projects</h2>
+
+    <h2>FAQ</h2>
+
+    <div class="center">
+      <img class="pro-img" width="500px" height="281" src="/image-1.webp" alt="First Image" />
+    </div>
+
+    <p>Aenean a ex et metus finibus malesuada commodo in magna. 
+    In ut libero urna. Aenean in quam in ipsum rutrum egestas. 
+    Donec semper dignissim ante. Sed efficitur mi et sapien ultrices malesuada. 
+    Aliquam fermentum aliquam ante, eu semper mi vestibulum quis. 
+    Sed et purus metus. Pellentesque vestibulum commodo euismod. 
+    Duis a mauris accumsan lorem laoreet tempor. Mauris accumsan varius metus, 
+    in rutrum magna accumsan eget. Pellentesque at leo at sem tempor hendrerit 
+    non sit amet ante. Cras commodo augue sed magna rutrum rutrum.</p>
+
+    <h2>Menu</h2>
     <ul role="list" class="link-card-grid">
         {allProjects.map((card) => <Card 
             url={`/projects/${card.slug}/`} 
