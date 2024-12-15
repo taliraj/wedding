@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+const pageTitle = "Lista nozze";
+---
+
+<Layout pageTitle="Lista Nozze">
+    <h2>Lista Nozze</h2>
+
+    {/* Sezione IBAN */}
+    <section class="gift-section">
+        <h3>Contribuisci al nostro Viaggio di Nozze</h3>
+        <p>I soldi non fanno la felicità, ma il viaggio di nozze sì!</p>
+        <div class="iban-box">
+            <strong>IBAN:</strong> IT60X0542811101000000123456
+        </div>
+        <p>Grazie di cuore per il tuo generoso contributo!</p>
+    </section>
+
+    {/* Sezione Messaggi */}
+    <section class="message-section">
+        <h3>Lascia un Messaggio o un Commento</h3>
+        <p>Vuoi farci arrivare un pensiero speciale? Usa il servizio di cartoline virtuali per condividere i tuoi auguri con noi!</p>
+        <div class="center">
+            <a href="https://www.virtualpostcard.com" target="_blank">
+                <button class="btn">Invia una Cartolina Virtuale</button>
+            </a>
+        </div>
+    </section>
+</Layout>
