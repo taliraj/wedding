@@ -3,55 +3,103 @@ import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 const allProjects = await getCollection("projects");
-const pageTitle = "Works";
+const pageTitle = "Info";
 ---
 <Layout pageTitle={pageTitle}>
 
-    <h2>Maps</h2>
-    <p>Aenean a ex et metus finibus malesuada commodo in magna. 
-    In ut libero urna. Aenean in quam in ipsum rutrum egestas. 
-    Donec semper dignissim ante. Sed efficitur mi et sapien ultrices malesuada. 
-    Aliquam fermentum aliquam ante, eu semper mi vestibulum quis. 
-    Sed et purus metus. Pellentesque vestibulum commodo euismod. 
-    Duis a mauris accumsan lorem laoreet tempor. Mauris accumsan varius metus, 
-    in rutrum magna accumsan eget. Pellentesque at leo at sem tempor hendrerit 
-    non sit amet ante. Cras commodo augue sed magna rutrum rutrum.</p>
+    <h2>Italia (Genova)</h2>
+    <p><em>“Vedrai una città regale addossata ad una collina alpestre, superba per uomini e per mura, il cui solo aspetto la indica Signora del Mare: Genova” (cit. Francesco Petrarca)</em></p>
+    <p>Per tutti coloro che non potranno partecipare alla festa in Albania, come da invito ricevuto, il giorno stesso della cerimonia civile terremo un’apericena a Genova, presso “TITOLO”.</p>
+    <p>Oltre che essere belli, vi chiediamo di essere carichi!</p>
 
-    <div class="map">
-      <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.9396230057923!2d19.711337726555712!3d41.41882929404352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13502d0712c5607f%3A0x5254c1f62d5286db!2sTirana%20International%20Airport!5e0!3m2!1sen!2suk!4v1731354053232!5m2!1sen!2suk" 
-          width="600" 
-          height="450" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
+    <h2>Albania (Hekal)</h2>
+    <h3>Dress code</h3>
+    <p><em>“Il modo di vestirsi è una preoccupazione sciocca. Ma è molto sciocco per un uomo non essere ben vestito” (cit. Lord Chesterfield)</em></p>
+    <p>Starete già pensando…ma come mi vesto per l’evento? Vestitevi belli, ma la cosa importate è che veniate carichi e pieni di entusiasmo! Dal momento che ci scateneremo tutta la sera ballando, consigliamo di portarvi un paio di scarpe comode extra.</p>
 
-    <h2>FAQ</h2>
+    <h3>Maps e mezzi</h3>
+    <p>Per raggiungere il luogo dell’evento in Albania (Hekal), qualora non siate automuniti e arriviate in aereo, raccomandiamo di noleggiare una macchina, in quanto non vi sono mezzi pubblici a disposizione.</p>
+    <p>Per eventuali info sul noleggio auto, è disponibile un servizio a pagamento messo a disposizione da parte di “Auto Bledi” che potete contattare al seguente numero: +355 69 522 7388 (risponde comodamente via Whatsapp, nome Bledi). In caso alternativo è possibile il noleggio diretto o su prenotazione direttamente presso l’aeroporto.</p>
 
-    <div class="center">
-      <img class="pro-img" width="500px" height="281" src="/image-1.webp" alt="First Image" />
-    </div>
+    <!--<div class="map">-->
+    <!--  <iframe -->
+    <!--      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.9396230057923!2d19.711337726555712!3d41.41882929404352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13502d0712c5607f%3A0x5254c1f62d5286db!2sTirana%20International%20Airport!5e0!3m2!1sen!2suk!4v1731354053232!5m2!1sen!2suk" -->
+    <!--      width="600" -->
+    <!--      height="450" -->
+    <!--      style="border:0;" -->
+    <!--      allowfullscreen="" -->
+    <!--      loading="lazy" -->
+    <!--      referrerpolicy="no-referrer-when-downgrade"-->
+    <!--  ></iframe>-->
+    <!--</div>-->
 
-    <p>Aenean a ex et metus finibus malesuada commodo in magna. 
-    In ut libero urna. Aenean in quam in ipsum rutrum egestas. 
-    Donec semper dignissim ante. Sed efficitur mi et sapien ultrices malesuada. 
-    Aliquam fermentum aliquam ante, eu semper mi vestibulum quis. 
-    Sed et purus metus. Pellentesque vestibulum commodo euismod. 
-    Duis a mauris accumsan lorem laoreet tempor. Mauris accumsan varius metus, 
-    in rutrum magna accumsan eget. Pellentesque at leo at sem tempor hendrerit 
-    non sit amet ante. Cras commodo augue sed magna rutrum rutrum.</p>
+    <h3>Visitare l’Albania</h3>
+    <p><em>“L’Albania è come andare in bicicletta: non puoi fidarti delle descrizioni nei libri, devi andarci” (cit. Gabri)</em></p>
+    <p>Avete intenzione di trascorrere qualche giorno di mare o volete gustare le bellezze dell’Albania? Consigliamo vivamente le seguenti località di mare e città.</p>
+    <section>
+      <h4>Località di mare</h4>
+      <ul>
+        <li>Zvernec</li>
+        <li>Orikum</li>
+        <li>Dhermi</li>
+        <li>Himarë</li>
+        <li>Borsh</li>
+        <li>Porto Palermo</li>
+        <li>Ksamil</li>
+      </ul>
+    </section>
 
-    <h2>Menu</h2>
-    <ul role="list" class="link-card-grid">
-        {allProjects.map((card) => <Card 
-            url={`/projects/${card.slug}/`} 
-            image={card.data.image.url} 
-            title={card.data.title} 
-            body={card.data.description}
-        />)}
-    </ul>
+    <section>
+      <h4>Città e luoghi da visitare</h4>
+      <ul>
+        <li>Tirana</li>
+        <li>Berat</li>
+        <li>Gjirokaster</li>
+        <li>Terme di Permet</li>
+        <li>Saranda</li>
+        <li>Syri i Kaltër (Occhio Azzurro)</li>
+        <li>Centro storico “Bylis” (Hekal)</li>
+      </ul>
+    </section>
+
+    <h3>FAQ</h3>
+    <article>
+      <h3>È obbligatorio il passaporto per l’Albania?</h3>
+      <p>No, è sufficiente la carta d’identità italiana valida per l'espatrio. In entrambi i casi (passaporto e carta d’identità), è necessario che la data di scadenza sia superiore di almeno tre mesi alla data di rientro dall'Albania (es. se rientri il 15 luglio 2025, il documento non deve scadere prima del 15 ottobre 2025).</p>
+    </article>
+    <article>
+      <h3>Posso usare l’Euro come moneta in Albania?</h3>
+      <p>Sì, l’Euro è accettato come moneta, ma è comunque possibile cambiare con il Lek (la moneta locale albanese) che non è convertibile fuori dall’Albania. Consigliamo di avere dei contanti in lek.</p>
+    </article>
+    <article>
+      <h3>Posso sempre usare la carta di credito in Albania?</h3>
+      <p>Sì, è possibile pagare con le carte di credito, in base alle policy previste con il proprio istituto di credito. Consigliamo di usare la carta di credito solo nei grandi centri abitati (es. località di mare e grandi città). In altri casi, consigliamo l’utilizzo dei contanti.</p>
+    </article>
+    <article>
+      <h3>Posso usare internet e/o il mio piano tariffario UE roaming in Albania?</h3>
+      <p>No, non essendo paese dell’UE, non è possibile utilizzare il proprio piano tariffario e l’UE roaming, come previsto dall’attuale normativa europea. Consigliamo di verificare con il proprio operatore telefonico quali offerte è possibile integrare o utilizzare (es. Vodafone Smart Passport). La maggior parte dei locali pubblici (es. bar, ristoranti, ecc.) e delle strutture alberghiere offre Wi-Fi gratuito.</p>
+    </article>
+    <article>
+      <h3>Numeri utili</h3>
+      <ul>
+        <li><strong>Pronto soccorso:</strong> 127 (ambulanze e urgenze). Numero attivo solo a Tirana.</li>
+        <li><strong>Polizia:</strong> 112 (pronto intervento), 126 (polizia stradale). Numeri attivi solo nei principali centri urbani.</li>
+      </ul>
+    </article>
+
+    <!--<div class="center">-->
+    <!--  <img class="pro-img" width="500px" height="281" src="/image-1.webp" alt="First Image" />-->
+    <!--</div>-->
+
+
+    <!--<h2>Menu</h2>-->
+    <!--<ul role="list" class="link-card-grid">-->
+    <!--    {allProjects.map((card) => <Card -->
+    <!--        url={`/projects/${card.slug}/`} -->
+    <!--        image={card.data.image.url} -->
+    <!--        title={card.data.title} -->
+    <!--        body={card.data.description}-->
+    <!--    />)}-->
+    <!--</ul>-->
 </Layout>
 
