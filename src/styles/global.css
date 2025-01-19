@@ -6,6 +6,10 @@
     font-family: Belleza;
     src: url("/Belleza-Regular.ttf");
 }
+@font-face {
+    font-family: Hammersmith;
+    src: url("/HammersmithOne-Regular.ttf");
+}
 /* Global styles */
 :root {
     /*--background: #1e1e2e;*/
@@ -19,6 +23,7 @@
     --underline: #375a7f;
     --header: "Pacifico", cursive;
     --body: "Belleza", sans-serif;
+    --font-secondary: "Hammersmith", sans-serif;
 }
 
 html {
@@ -37,6 +42,12 @@ h2 {
     font-family: var(--header);
     font-weight: normal;
 }
+
+h3 {
+    font-family: var(--font-secondary);
+    font-weight: normal;
+}
+
 
 h1 {
     font-size: 2.6rem;
