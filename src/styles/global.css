@@ -433,6 +433,7 @@ footer {
     border-radius: 8px;
     display: inline-block;
     border: 1px solid #ddd;
+    font-family: var(--body);
 }
 
 .center {
