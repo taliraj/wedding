@@ -2,6 +2,10 @@
     font-family: AbadiMtStd;
     src: url("/abadi-mt-std.ttf");
 }
+@font-face {
+    font-family: Belleza;
+    src: url("/Belleza-Regular.ttf");
+}
 /* Global styles */
 :root {
     /*--background: #1e1e2e;*/
@@ -14,7 +18,7 @@
     --text-link: #78c2ad;
     --underline: #375a7f;
     --header: "Pacifico", cursive;
-    --body: "AbadiMtStd", sans-serif;
+    --body: "Belleza", sans-serif;
 }
 
 html {
@@ -53,7 +57,7 @@ p {
     font-size: 1.1rem;
     hyphens: auto;
     line-height: 1.5;
-    text-indent: 1rem;
+    /*text-indent: 1rem;*/
 }
 
 small,
