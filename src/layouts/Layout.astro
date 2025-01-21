@@ -18,28 +18,12 @@ const { pageTitle } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>{pageTitle}</title>
 	</head>
-	<body>
-        <Header />
-        <main>
-	    <slot />
-            <!--<Footer />-->
-        </main>
-        <!--<script>-->
-        <!--    function colorMode() {-->
-        <!--        if (-->
-        <!--            localStorage.theme === "light" ||-->
-        <!--            (!("theme" in localStorage) &&-->
-        <!--            window.matchMedia("(prefers-color-scheme: light)").matches)-->
-        <!--        ) {-->
-        <!--            document.documentElement.classList.add("light");-->
-        <!--        } else {-->
-        <!--            document.documentElement.classList.remove("light");-->
-        <!--        }-->
-        <!--      }-->
-        <!---->
-        <!--    colorMode();-->
-        <!--    document.addEventListener('astro:after-swap', colorMode);-->
-        <!--</script>-->
-	</body>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <script id="dsq-count-scr" src="//gabri-eda.disqus.com/count.js" async></script>
+  </body>
 </html>
 
