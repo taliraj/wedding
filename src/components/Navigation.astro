@@ -1,17 +1,26 @@
 ---
 import LanguageSwitcher from './LanguageSwitcher.astro';
+
+// Detect current language based on the path
+const currentLang = Astro.url.pathname.startsWith('/al') ? 'al' : 'it';
+
+// Links for each page (base path only)
+const pages = [
+  { path: 'info/', label: 'Info' },
+  { path: 'lista_nozze/', label: 'Lista Nozze' },
+  { path: 'photos/', label: 'Foto' },
+  { path: 'faq/', label: 'FAQ' },
+];
 ---
 <div class="navbar">
     <div class="navbar__title">
-        <a href="/">Gabri-Eda</a>
+        <a href={currentLang === 'al' ? '/al/' : '/'}>Gabri-Eda</a>
     </div>
     <div class="navbar__menu">
-        <a href="/info/">Info</a>
-        <a href="/lista_nozze/">Lista Nozze</a>
-        <a href="/photos/">Foto</a>
+        {pages.map((page) => (
+          <a href={`${currentLang === 'al' ? '/al/' : '/'}${page.path}`}>{page.label}</a>
+        ))}
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMzKwK6MNS8v52lX8lmevHW1zeYYdGF5Gwi5M497m6NWO6YQ/viewform" target="_blank">RSVP</a>
-        <a href="/faq/">FAQ</a>
-        <LanguageSwitcher />
+        <LanguageSwitcher currentLang={currentLang} />
     </div>
 </div>
-
