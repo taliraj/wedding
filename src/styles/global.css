@@ -13,7 +13,11 @@
 @font-face {
     font-family: Sifonn;
     src: url("/SIFONN_PRO.otf");
+}{
+    font-family: Moontime;
+    src: url("/moon-time-regular.ttf");
 }
+
 /* Global styles */
 :root {
     /*--background: #1e1e2e;*/
@@ -29,6 +33,7 @@
     --body: "Belleza", sans-serif;
     --font-secondary: "Hammersmith", sans-serif;
     --font-title: "Sifonn", cursive;
+    --font-moontime: "Moontime", sans-serif;
 }
 
 html {
@@ -89,8 +94,9 @@ li {
 }
 
 .navbar__title {
-    font-family: var(--header);
-    font-size: 1.3rem;
+    font-family: var(--font-moontime);
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
 }
 
 .navbar__menu {
