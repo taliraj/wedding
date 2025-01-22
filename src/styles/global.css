@@ -13,7 +13,8 @@
 @font-face {
     font-family: Sifonn;
     src: url("/SIFONN_PRO.otf");
-}{
+}
+@font-face{
     font-family: Moontime;
     src: url("/moon-time-regular.ttf");
 }
@@ -95,8 +96,9 @@ li {
 
 .navbar__title {
     font-family: var(--font-moontime);
-    font-size: 1.4rem;
-    margin-top: 0.2rem;
+    font-size: 2.4rem;
+    margin-top: -0.4rem;
+    font-weight: 600;
 }
 
 .navbar__menu {
