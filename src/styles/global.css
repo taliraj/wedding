@@ -18,6 +18,10 @@
     font-family: Moontime;
     src: url("/moon-time-regular.ttf");
 }
+@font-face{
+    font-family: Benedict;
+    src: url("/benedict-regular.otf");
+}
 
 /* Global styles */
 :root {
@@ -35,6 +39,7 @@
     --font-secondary: "Hammersmith", sans-serif;
     --font-title: "Sifonn", cursive;
     --font-moontime: "Moontime", sans-serif;
+    --font-benedict: "Benedict", sans-serif;
 }
 
 html {
@@ -95,10 +100,10 @@ li {
 }
 
 .navbar__title {
-    font-family: var(--font-moontime);
+    font-family: var(--font-benedict);
     font-size: 2.4rem;
     margin-top: -0.4rem;
-    font-weight: 600;
+    /*font-weight: 600;*/
 }
 
 .navbar__menu {
